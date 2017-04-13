@@ -23,7 +23,7 @@ def welcome(m):
     markup.add(b)
     nn = types.InlineKeyboardButton("Inline Mode", switch_inline_query='')
     markup.add(nn)
-    ret_msg = bot.send_message(cid, "Hello I'm ID bot \n\n Send : \n  /id or /me or /info   \n\n\n get your id : \n /idme (just pv) \nsend Your feedback : /feedback [msg]\n\n\n list inline mod : \ntype @ID_bot_robot\n\nBot version 3", disable_notification=True, reply_markup=markup)
+    ret_msg = bot.send_message(cid, "Hello I'm ID bot \n\n Send : \n  /id or /me or /info   \n\n\n get your id : \n /idme (just pv) \nsend Your feedback : /feedback [msg]\n\n\n list inline mod : \ntype @Your_ID_Robot\n\nBot version 3", disable_notification=True, reply_markup=markup)
     assert ret_msg.message_id
 
 @bot.message_handler(commands=['id', 'ids', 'info', 'me'])
@@ -82,7 +82,7 @@ def p(m):
 @bot.message_handler(commands=['idbot'])
 def handler(m):
     cid = m.chat.id
-    bot.send_message(cid, "My Name is ID bot \n creator and developer : [Esmail](https://telegram.me/EsMailMa) \n development channel : [Off Team](https://telegram.me/taylor_team)\n\n [github](https://github.com/ESMAILESMAIL/IDBOT)", parse_mode="Markdown")
+    bot.send_message(cid, "My Name is ID bot \n creator and developer : [Esmail](https://telegram.me/EsMailMa) \n development channel : [Off Team](https://telegram.me/OffTeam)\n\n [github](https://github.com/ESMAILESMAIL/IDBOT)", parse_mode="Markdown")
     bot.send_chat_action(cid, "upload_photo")
     bot.send_photo(cid, open('slackbot-story1-582x436.jpg'), caption="@Your_ID_BOT  \xF0\x9F\x98\x9C")
 
