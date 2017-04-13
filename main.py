@@ -16,10 +16,10 @@ bot = telebot.TeleBot(config.token)
 def welcome(m):
     cid = m.chat.id
     markup = types.InlineKeyboardMarkup()
-    a = types.InlineKeyboardButton("Taylor Team \xE2\x9C\x8C", url="https://telegram.me/taylor_team")
-    c = types.InlineKeyboardButton("Add group \xE2\x9C\x8C", url="https://telegram.me/ID_bot_robot?startgroup=test")
+    a = types.InlineKeyboardButton("E.MK \xE2\x9C\x8C", url="https://telegram.me/EsMailMa")
+    c = types.InlineKeyboardButton("Add group \xE2\x9C\x8C", url="https://telegram.me/Your_ID_Robot?startgroup=test")
     markup.add(a, c)
-    b = types.InlineKeyboardButton("Developer ID bot \xE2\x9C\x8C", url="https://telegram.me/negative_officiall")
+    b = types.InlineKeyboardButton("Developer ID bot \xE2\x9C\x8C", url="https://telegram.me/EsMailMa")
     markup.add(b)
     nn = types.InlineKeyboardButton("Inline Mode", switch_inline_query='')
     markup.add(nn)
@@ -39,7 +39,7 @@ def id(m):      # info menu
     p = m.pinned_message
     fromm = m.forward_from
     markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton("\xF0\x9F\x98\x8A Taylor Team \xF0\x9F\x98\x8A", url="https://telegram.me/taylor_team"))
+    markup.add(types.InlineKeyboardButton("\xF0\x9F\x98\x8A E.MK \xF0\x9F\x98\x8A", url="https://telegram.me/EsMailMa"))
 #info text
     bot.send_chat_action(cid, "typing")
     bot.reply_to(m, "*ID from* : ```{}``` \n\n *Chat name* : ```{}``` \n\n\n *Your Username* : ```{}``` \n\n *Your First Name* : ```{}```\n\n *Your Last Name* : ```{}```\n\n *Type From* : ```{}``` \n\n *Msg data* : ```{}```\n\n *Your Msg* : ```{}```\n\n* pind msg * : ```{}```\n\n *from* : ```{}```".format(cid,title,usr,f,l,t,d,text,p,fromm), parse_mode="Markdown", reply_markup=markup)
@@ -56,18 +56,18 @@ def p(m):
     uid = m.chat.id
     markup = types.InlineKeyboardMarkup()
     v = types.InlineKeyboardButton('\xF0\x9F\x91\x87 \xF0\x9F\x91\xA5 Thanks to \xF0\x9F\x91\xA5 \xF0\x9F\x91\x87', callback_data='Team')
-    a = types.InlineKeyboardButton('Negative', url='https://telegram.me/negative_officiall')
-    b = types.InlineKeyboardButton('Parham', url='https://telegram.me/UnFriendlly')
-    c = types.InlineKeyboardButton('Arsalan', url='https://telegram.me/mute_all')
-    n = types.InlineKeyboardButton('Amircc_CreeD', url='https://telegram.me/Amircc_CreeD')
-    m = types.InlineKeyboardButton('sorblack', url='https://telegram.me/sorblack')
-    k = types.InlineKeyboardButton('MrJacki', url='https://telegram.me/MrJacki')
-    j = types.InlineKeyboardButton('allwen', url='https://telegram.me/allwen')
-    o = types.InlineKeyboardButton('Randall', url='https://telegram.me/Xx_Randall_Xx')
-    p = types.InlineKeyboardButton('NeonGame', url='https://telegram.me/pokr_face')
+    a = types.InlineKeyboardButton('E.MK', url='https://telegram.me/EsMailMa')
+    b = types.InlineKeyboardButton('E.MK', url='https://telegram.me/EsMailMa')
+    c = types.InlineKeyboardButton('E.MK', url='https://telegram.me/EsMailMa')
+    n = types.InlineKeyboardButton('E.MK', url='https://telegram.me/EsMailMa')
+    m = types.InlineKeyboardButton('E.MK', url='https://telegram.me/EsMailMa')
+    k = types.InlineKeyboardButton('E.MK', url='https://telegram.me/EsMailMa')
+    j = types.InlineKeyboardButton('E.MK', url='https://telegram.me/EsMailMa')
+    o = types.InlineKeyboardButton('E.MK', url='https://telegram.me/EsMailMa')
+    p = types.InlineKeyboardButton('E.MK', url='https://telegram.me/EsMailMa')
     y = types.InlineKeyboardButton('\xF0\x9F\x92\x8E End \xF0\x9F\x92\x8E', callback_data='Team')
-    ch = types.InlineKeyboardButton('Channel', url='https://telegram.me/idbot_channel')
-    git = types.InlineKeyboardButton('Github', url='https://github.com/taylor-team')
+    ch = types.InlineKeyboardButton('Channel', url='https://telegram.me/OffTeam')
+    git = types.InlineKeyboardButton('Github', url='https://github.com/ESMAILESMAIL')
     markup.add(v)
     markup.add(a, j)
     markup.add(b, c)
@@ -76,15 +76,15 @@ def p(m):
     markup.add(y)
     markup.add(ch, git)
     bot.send_chat_action(uid, 'typing')
-    bot.send_message(uid, "Taylor Team development Telegram bot and web mastering \n\n developers : \n [negative](https://telegram.me/negative_officiall) \n [Parham](https://telegram.me/UnFriendlly)", parse_mode="Markdown")
-    bot.send_photo(uid, open('taylor.jpg'), caption="@Taylor_Team", reply_markup=markup)
+    bot.send_message(uid, "Off Team development Telegram bot and web mastering \n\n developers : \n [EsMail](https://telegram.me/EsMailMa) \n [Channel](https://telegram.me/OffTeam)", parse_mode="Markdown")
+    bot.send_photo(uid, open('EsMailMa.jpg'), caption="@OffTeam", reply_markup=markup)
 
 @bot.message_handler(commands=['idbot'])
 def handler(m):
     cid = m.chat.id
-    bot.send_message(cid, "My Name is ID bot \n creator and developer : [negative](https://telegram.me/negative_officiall) \n development channel : [Taylor Team](https://telegram.me/taylor_team)\n\n [github](https://github.com/taylor-team/id-bot)", parse_mode="Markdown")
+    bot.send_message(cid, "My Name is ID bot \n creator and developer : [Esmail](https://telegram.me/EsMailMa) \n development channel : [Off Team](https://telegram.me/taylor_team)\n\n [github](https://github.com/ESMAILESMAIL/IDBOT)", parse_mode="Markdown")
     bot.send_chat_action(cid, "upload_photo")
-    bot.send_photo(cid, open('slackbot-story1-582x436.jpg'), caption="@ID_bot_robot  \xF0\x9F\x98\x9C")
+    bot.send_photo(cid, open('slackbot-story1-582x436.jpg'), caption="@Your_ID_BOT  \xF0\x9F\x98\x9C")
 
 @bot.message_handler(commands=['idme'])
 def test_handler(m):
@@ -133,9 +133,9 @@ def query_text(query):
                                           reply_markup=markup,
                                           thumb_url=thumb_url)
     #pic = types.InlineQueryResultPhoto('2',
-                                       #'http://vip.opload.ir/vipdl/95/3/negative23/photo-2016-06-09-01-09-41.jpg',
-                                       #'http://vip.opload.ir/vipdl/95/3/negative23/photo-2016-06-09-01-09-41.jpg',
-                                       #input_message_content=types.InputTextMessageContent('@Taylor_Team')
+                                       #'http://s9.picofile.com/file/8291960926/EsMailMa.jpg',
+                                       #'http://s9.picofile.com/file/8291960926/EsMailMa.jpg',
+                                       #input_message_content=types.InputTextMessageContent('@OffTeam')
     #gif = types.InlineQueryResultGif('2',
                                     # 'http://andrewtrimmer.com/wp-content/uploads/2014/09/Coming-Soon_Light-Bulbs_Cropped-Animation-Set_03c.gif',
                                      #'http://andrewtrimmer.com/wp-content/uploads/2014/09/Coming-Soon_Light-Bulbs_Cropped-Animation-Set_03c.gif',
@@ -182,5 +182,5 @@ bot.polling(True)
 #  | | (_| | |_| | | (_) | |      | |  __/ (_| | | | | | |
 #  |_|\__,_|\__, |_|\___/|_|      |_|\___|\__,_|_| |_| |_|
 #           |___/
-#Copy right  2016 Negative - Taylor Team
+#Copy right  2016 Negative - Off Team
 #MIT license
